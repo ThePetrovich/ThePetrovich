@@ -1,30 +1,21 @@
 %!TEX program = xelatex
 \documentclass[letter,10pt]{article}
-\usepackage[utf8]{inputenc}
-
-%====================
-% File:         resume.tex
-% Editor:       https://github.com/TimmyChan 
-%               https://www.linkedin.com/in/timmy-l-chan/
-% Last Updated: Nov 19, 2021
-% Notes:        All formatting is done in TLCresume.sty
-%               No need to touch that file. 
-%               All actual content is in the sections/ folder.
-%====================
+% File:              cv.tex
+% Edited:            https://github.com/thepetrovich
+% Original author:   https://github.com/TimmyChan 
+%                    https://www.linkedin.com/in/timmy-l-chan/
 
 \usepackage{cv}
 
-%====================
-% CONTACT INFORMATION
-%====================
-\author{Andrei Petrov} % Name Here
+\author{Andrei Petrov}
 \def\city{Yakutsk, Russia}
 \def\email{thepetrovich@yktaero.space}
-\def\LinkedIn{thepetrovich} % linkedin.com/in/______
-\def\github{thepetrovich} % github username
-\def\role{Embedded software developer} % JOB TITLE
+\def\LinkedIn{thepetrovich}
+\def\github{thepetrovich}
+\def\role{Embedded software developer}
 
 \begin{document}
+
 \import{sections/}{_header}
 \import{sections/}{objective}
 
@@ -43,5 +34,16 @@
 \section{Activities}
 \import{sections/}{activities}
 
+% The following cringe is required for universities
+%\newpage
+%\section{Personal statement}
+%\import{sections/}{autobio}
+
+%\section{Facts}
+%\import{sections/}{facts}
+
+%\newpage
+%\section{Statement of purpose and study plan}
+%\import{sections/}{studyplan}
 
 \end{document}
