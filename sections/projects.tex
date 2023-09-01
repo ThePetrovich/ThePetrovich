@@ -3,7 +3,7 @@
 \begin{document}
 
 \subsection{{Sakha Aerospace Systems Ground Station Network \hfill In development}}
-\subtext{Link: \url{https://gsn.yktaero.space} \hfill Stack: Python, Django, Jinja2, Django REST}
+\subtext{Link: \url{https://gsn.yktaero.space} \hfill Stack: Django, Jinja2, Django REST, Django Channels}
 \begin{zitemize}
 \item Provides a public API to query satellite ground station status.
 \item Visualizes ground station operation by displaying antenna position and satellite passes.
@@ -13,23 +13,23 @@
 \item (Planned) Stores past telemetry packets and allows to obtain historic satellite data.
 \end{zitemize}
 
-\subsection{{Sakha Aerospace Systems Datasheet website \hfill In development}}
-\subtext{Link: \url{https://docs.yktaero.space} \hfill Stack: Python, Django, Jinja2, Django REST}
+\subsection{{YktSat EDU/16 Payload Module \hfill In development}}
+\subtext{Link: \url{https://yktaero.space/projects/item/ykts-pl-edu16-sptx} \hfill Stack: KiCad, C/C++, Doxygen}
+\begin{zitemize}
+\item Conforms with PC/104, CubeSat, and Sputnix ICD specifications.
+\item 4-Layer modular PCB, designed from scratch in KiCad.
+\item Modular firmware written in C \& AVR assembly, unit tests with CppUTest, CI/CD supported.
+\item Single makefile, firmware built and tested with self-hosted GitLab.
+\end{zitemize}
+
+\subsection{{Sakha Aerospace Systems Datasheet website \hfill Operational}}
+\subtext{Link: \url{https://docs.yktaero.space} \hfill Stack: Django, Jinja2, Django REST}
 \begin{zitemize}
 \item Provides users with a list of all published technical documents.
 \item Search, filtering, reordering supported.
 \item Stores and displays revision history for all documents, provides file downloads for every revision.
 \item Allows creating new documents and uploading files via administration panel.
 \item (Planned) GitLab CI integration for \LaTeX documents with automated publishing.
-\end{zitemize}
-
-\subsection{{YktSat EDU/16 Payload Module \hfill In development}}
-\subtext{Link: \url{https://yktaero.space/projects/item/ykts-pl-edu16-sptx} \hfill Stack: KiCad, C/C++, Doxygen}
-\begin{zitemize}
-\item Conformant with PC/104, CubeSat, and Sputnix ICD specifications.
-\item 4-Layer modular PCB, designed from scratch in KiCad.
-\item Modular firmware written in C \& AVR assembly, unit tests with CppUTest, CI/CD supported.
-\item Single makefile, firmware built and tested with self-hosted GitLab.
 \end{zitemize}
 
 \subsection{{Ground Station Controller - stationctl \hfill Operational}}
