@@ -1,3 +1,4 @@
+%!TEX root = ../cv.tex
 \documentclass[letter,10pt]{article}
 \usepackage{cv}
 \begin{document}
@@ -16,7 +17,8 @@
 \subsection{{YktSat EDU/16 Payload Module \hfill In development}}
 \subtext{Link: \url{https://yktaero.space/projects/item/ykts-pl-edu16-sptx} \hfill Stack: KiCad, C/C++, Doxygen}
 \begin{zitemize}
-\item Conforms with PC/104, CubeSat, and Sputnix ICD specifications.
+\item Expected to be launched in Q4 2024 with the SAKHACUBE-1 CubeSat, will be used for educational purposes.
+\item Compliant with PC/104, CubeSat, and Sputnix ICD specifications.
 \item 4-Layer modular PCB, designed from scratch in KiCad.
 \item Modular firmware written in C \& AVR assembly, unit tests with CppUTest, CI/CD supported.
 \item Single makefile, firmware built and tested with self-hosted GitLab.
@@ -41,15 +43,7 @@
 \item Production deployment \& usage in Sakha Junior Science Academy.
 \end{zitemize}
 
-\subsection{{Sakha Aerospace Systems website \hfill Operational}}
-\subtext{Link: \url{https://yktaero.space} \hfill Stack: Python, Django, Jinja2}
-\begin{zitemize}
-\item Simple landing page, blog and project overview.
-\item No front end frameworks, blazing fast (95+ PageSpeed).
-\item CI/CD with self-hosted GitLab.
-\end{zitemize}
-
-\subsection{{Sakha Aerospace Systems development infrastructure \hfill Operational}}
+\subsection{{Sakha Aerospace Systems server infrastructure \hfill Operational}}
 \subtext{Link: \url{https://status.yktaero.space} \hfill Stack: VMware ESXi, pfSense, nginx}
 \begin{zitemize}
 \item Various services for team collaboration: Nextcloud, Gitlab, Onlyoffice, Inventree.
@@ -69,6 +63,14 @@
 \item Built-in heap manager with allocation tracking and double free protection.
 \item Unit tests with CppUTest, Doxygen for documentation.
 \item Used in YktSat EDU/16 Payload Module firmware.
+\end{zitemize}
+
+\subsection{{Jfkerman.me server infrastructure \hfill Operational}}
+\subtext{Personal project, link: \url{https://jfkerman.me} \hfill Stack: VMware ESXi, pfSense, nginx, Django}
+\begin{zitemize}
+\item Multiprotocol VPN for censorship circumvention, self-hosted Matrix server, TeamSpeak and SSO.
+\item Custom Outline VPN key management solution -- \url{outline.jfkerman.me}, \href{https://github.com/ThePetrovich/jfkerman_outline}{see on GitHub}. 
+\item Deployed in 2022 as a response to Russian Wartime censorship law.
 \end{zitemize}
 
 \subsection{{UEFI mods \hfill Production usage}}
