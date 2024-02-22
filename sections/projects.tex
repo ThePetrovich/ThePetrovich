@@ -11,7 +11,16 @@
 \item Receives real-time satellite telemetry data and forwards it to clients.
 \item Generates satellite pass schedule and manages ground station tracking.
 \item (Planned) Provides a public satellite imagery repository using ground stations.
-\item (Planned) Stores past telemetry packets and allows to obtain historic satellite data.
+\item (Planned) Stores past telemetry packets and allows obtaining historic satellite data.
+\end{zitemize}
+
+\subsection{{Ground Station Controller - stationctl \hfill In development}}
+\subtext{Internal tool \hfill Stack: Python, GnuRadio, Skyfield}
+\begin{zitemize}
+\item Estimates satellite position in real time using orbital elements.
+\item Automatically adjusts radio link parameters (data rate, carrier frequency with Doppler shift, etc.).
+\item Aims antenna rotator to the satellite position.
+\item Production deployment \& usage in Sakha Junior Science Academy.
 \end{zitemize}
 
 \subsection{{YktSat EDU/16 Payload Module \hfill In development}}
@@ -24,35 +33,6 @@
 \item Single makefile, firmware built and tested with self-hosted GitLab.
 \end{zitemize}
 
-\subsection{{Sakha Aerospace Systems Datasheet website \hfill Operational}}
-\subtext{Link: \url{https://docs.yktaero.space} \hfill Stack: Django, Jinja2, Django REST}
-\begin{zitemize}
-\item Provides users with a list of all published technical documents.
-\item Search, filtering, reordering supported.
-\item Stores and displays revision history for all documents, provides file downloads for every revision.
-\item Allows creating new documents and uploading files via administration panel.
-\item (Planned) GitLab CI integration for {\LaTeX} documents with automated publishing.
-\end{zitemize}
-
-\subsection{{Ground Station Controller - stationctl \hfill Operational}}
-\subtext{Internal tool \hfill Stack: Python, GnuRadio, Skyfield}
-\begin{zitemize}
-\item Estimates satellite position in real time using orbital elements.
-\item Automatically adjusts radio link parameters (data rate, carrier frequency with Doppler shift, etc.).
-\item Aims antenna rotator to the satellite position.
-\item Production deployment \& usage in Sakha Junior Science Academy.
-\end{zitemize}
-
-\subsection{{Sakha Aerospace Systems server infrastructure \hfill Operational}}
-\subtext{Link: \url{https://status.yktaero.space} \hfill Stack: VMware ESXi, pfSense, nginx}
-\begin{zitemize}
-\item Various services for team collaboration: Nextcloud, Gitlab, Onlyoffice, Inventree.
-\item Simple status reporting with GitHub Pages, internal monitoring with Zabbix.
-\item Single Sign-On for all services using self-hosted Authentik, migration to Keycloak is planned.
-\item Fully self-hosted \& virtualized, proper network isolation with VLANs, secure remote access with OpenVPN.
-\item Server uses enterprise-grade hardware.
-\end{zitemize}
-
 \subsection{{YktSat PL-RTOS kernel \hfill Production usage}}
 \subtext{Internal tool \hfill Stack: C/C++, Doxygen}
 \begin{zitemize}
@@ -63,6 +43,26 @@
 \item Built-in heap manager with allocation tracking and double free protection.
 \item Unit tests with CppUTest, Doxygen for documentation.
 \item Used in YktSat EDU/16 Payload Module firmware.
+\end{zitemize}
+
+\subsection{{Sakha Aerospace Systems Datasheet website \hfill Operational}}
+\subtext{Link: \url{https://docs.yktaero.space} \hfill Stack: Django, Jinja2, Django REST}
+\begin{zitemize}
+\item Provides users with a list of all published technical documents.
+\item Search, filtering, reordering supported.
+\item Stores and displays revision history for all documents, provides file downloads for every revision.
+\item Allows creating new documents and uploading files via administration panel.
+\item (Planned) GitLab CI integration for {\LaTeX} documents with automated publishing.
+\end{zitemize}
+
+\subsection{{Sakha Aerospace Systems server infrastructure \hfill Operational}}
+\subtext{Link: \url{https://status.yktaero.space} \hfill Stack: VMware ESXi, pfSense, nginx}
+\begin{zitemize}
+\item Various services for team collaboration: Nextcloud, Gitlab, Onlyoffice, Inventree.
+\item Simple status reporting with GitHub Pages, internal monitoring with Zabbix.
+\item Single Sign-On for all services using self-hosted Authentik, migration to Keycloak is planned.
+\item Fully self-hosted \& virtualized, proper network isolation with VLANs, secure remote access with OpenVPN.
+\item Server uses enterprise-grade hardware.
 \end{zitemize}
 
 \subsection{{Jfkerman.me server infrastructure \hfill Operational}}
@@ -78,7 +78,7 @@
 \begin{zitemize}
 \item DXE module with secret notes, activated with key combo, written in C with EDK II.
 \item Patched personal workstation EFI image with my custom DXE module, also added support for NVMe boot.
-\item Customized logos, UI images, backgrounds and DMI information; updated bult-in DXE drivers to latest versions. 
+\item Customized logos, UI images, backgrounds and DMI information; updated built-in DXE drivers to latest versions. 
 \item Flashed modded images into hardware, haven't bricked my PC.
 \end{zitemize}
 \end{document}
