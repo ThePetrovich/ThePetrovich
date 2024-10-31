@@ -3,15 +3,13 @@
 \usepackage{cv}
 \begin{document}
 
-\subsection{{Sakha Aerospace Systems Ground Station Network \hfill In development}}
-\subtext{Link: \url{https://gsn.yktaero.space} \hfill Stack: Django, Jinja2, Django REST, Django Channels}
+\subsection{{CUSF-Tawhiri Trajectory prediction tool \hfill Production usage}}
+\subtext{Link: \url{http://tawhiri.stratoflights.yktaero.space} \hfill Stack: Python, Flask, Jquery}
 \begin{zitemize}
-\item Provides a public API to query satellite ground station status.
-\item Visualizes ground station operation by displaying antenna position and satellite passes.
-\item Receives real-time satellite telemetry data and forwards it to clients.
-\item Generates satellite pass schedule and manages ground station tracking.
-\item (Planned) Provides a public satellite imagery repository using ground stations.
-\item (Planned) Stores past telemetry packets and allows obtaining historic satellite data.
+\item Fork of the original CUSF Tawhiri tool, adapted and hosted for Sakha Junior Science Academy.
+\item New features: custom ascent/descent profiles using time-altilude-rate curves, UI/UX improvements.
+\item Used to predict the flight path for the SJSA international aerospace school in March 2024.
+\item Additional work planned on request by \href{https://stratonautica.ru/}{STRATONAUTICA, LLC} company.
 \end{zitemize}
 
 \subsection{{Ground Station Controller - stationctl \hfill In development}}
@@ -20,6 +18,7 @@
 \item Estimates satellite position in real time using orbital elements.
 \item Automatically adjusts radio link parameters (data rate, carrier frequency with Doppler shift, etc.).
 \item Aims antenna rotator to the satellite position.
+\item Connects to the central server for scheduling and remote control as part of the GSN service.
 \item Production deployment \& usage in Sakha Junior Science Academy.
 \end{zitemize}
 
@@ -71,7 +70,7 @@
 \item Multiprotocol VPN for censorship circumvention, self-hosted Matrix server, TeamSpeak and SSO.
 \item Custom Outline VPN key management solution -- \url{outline.jfkerman.me}, \href{https://github.com/ThePetrovich/jfkerman_outline}{see on GitHub}. 
 \item Deployed in 2022 as a response to Russian Wartime censorship law.
-\item More than 30 active users from my friend circles, 100+ VPN keys issued. Free of charge.
+\item More than 40 active users from my friend circles, 100+ VPN keys issued. Free of charge.
 \end{zitemize}
 
 \subsection{{UEFI mods \hfill Production usage}}
